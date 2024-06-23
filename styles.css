@@ -300,67 +300,115 @@ body{
 }
 
 
-@media (max-width:600px){
-    .MainImg{
-        margin-right: 10%;
-        margin-left: 70%;
-        margin-top: 50%;
+/* Media Queries for Tablets and Mobile Devices */
+@media (max-width: 900px) {
+    .SecOne {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 5%;
+    }
+    
+    .logo {
+        font-size: 20px;
+    }
+    
+    .navi a {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+    
+    .row {
+        flex-direction: column;
+    }
+    
+    .col {
         max-width: 100%;
-     
-        }
-        .about{
-            display: inline;
-            align-items: center;
-            gap: 1.5rem;
-            max-height: fit-content;
-            max-width: fit-content;
-        
-        }
-        .about-text{
-            margin-left: 15px;
-            margin-right: 20px;
-        
-        }
-        .about-img img{
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            padding-bottom: 10%;
-            max-height: 350px;
-            width: auto;
-            max-width:90%;
-            border-radius: 8px;
-
-        }
-        
-        .about-text h2{
-            font-size: 60px;
-            text-align: center;
-
-        
-        }
-
-        .about-text h4{
-            
-            text-align: center;
-
-        }
-        .about-text p{
-            
-            text-align: center;
-
-        
-        }
-        .projcect-list div{
-
-            margin: auto;
-            width: auto;
-            height: auto;
-        }
+        flex: 1 1 100%;
+    }
+    
+    .MainImg {
+        margin: 0 auto;
+        margin-top: 20px;
+        max-width: 80%;
+    }
+    
+    .about {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-text {
+        margin: 20px;
+        text-align: center;
+    }
+    
+    .about-img img {
+        max-width: 90%;
+        max-height: 350px;
+    }
+    
+    .about-text h2 {
+        font-size: 40px;
+    }
+    
+    .about-text h4 {
+        font-size: 24px;
+    }
+    
+    .about-text p {
+        font-size: 18px;
+    }
+    
+    .contProj {
+        padding: 50px 20px;
+    }
 }
 
-
-
+@media (max-width: 600px) {
+    .SecOne {
+        padding: 15px 5%;
+    }
+    
+    .navi a {
+        font-size: 18px;
+        margin-left: 5px;
+    }
+    
+    .homeCont h1 {
+        font-size: 36px;
+    }
+    
+    .homeCont h3,
+    .homeCont h4 {
+        font-size: 24px;
+    }
+    
+    .Soci-Home a {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+        margin: 20px 10px 20px 0;
+    }
+    
+    .about-text h2 {
+        font-size: 32px;
+    }
+    
+    .about-text h4 {
+        font-size: 20px;
+    }
+    
+    .about-text p {
+        font-size: 16px;
+    }
+    
+    .projcect-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .projcect-list div {
+        padding: 20px;
+    }
+}
 
 
 
